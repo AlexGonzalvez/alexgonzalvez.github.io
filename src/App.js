@@ -1,6 +1,9 @@
 import React from "react";
 import background from "./images/debian_background_01.png";
 import mouse from "./images/mouse.png"
+import Navbar from "./Navbar"
+import Terminal from './Terminal';
+
 function App() {
   return (
     <div 
@@ -16,6 +19,8 @@ function App() {
       cursor: `url(${mouse}), auto`,
     }}
     >
+      <Terminal />
+      <Navbar />
 
     </div>
   );
